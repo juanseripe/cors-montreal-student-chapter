@@ -5,11 +5,12 @@
   --pad: 16px;
   --bg: #ffffff;
   --fg: #10364f;
+  --fg_other: #004e80;
   --muted: #666666;
   --border: #e6e6e6;
   --accent: #cf3735;
-  --footer-bg: #004e80;
-  --footer-fg: #ffffff;
+  --stripe-bg: #004e80;
+  --stripe-fg: #ffffff;
 }
 
 * { box-sizing: border-box; }
@@ -51,7 +52,7 @@ body {
 .main-nav {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--stripe-bg);
 }
 
 .main-nav ul {
@@ -67,7 +68,7 @@ body {
 
 .main-nav a {
   text-decoration: none;
-  color: var(--fg);
+  color: var(--stripe-fg);
   font-weight: 600;
   padding: 6px 10px;
   border-radius: 10px;
