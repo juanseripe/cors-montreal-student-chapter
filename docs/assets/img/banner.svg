@@ -3,8 +3,8 @@
 
 <svg
    width="2400"
-   height="500"
-   viewBox="0 0 2400 500"
+   height="300"
+   viewBox="0 0 2400 300"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
-     inkscape:zoom="0.32923478"
-     inkscape:cx="1073.7019"
-     inkscape:cy="144.27394"
+     inkscape:zoom="0.31776615"
+     inkscape:cx="1074.6897"
+     inkscape:cy="209.27339"
      inkscape:window-width="1512"
      inkscape:window-height="888"
      inkscape:window-x="0"
@@ -40,10 +40,10 @@
        id="linearGradient5"
        inkscape:collect="always"><stop
          style="stop-color:#ffffff;stop-opacity:0.74693877;"
-         offset="0.26598468"
+         offset="0.1982646"
          id="stop5" /><stop
          style="stop-color:#ffffff;stop-opacity:0;"
-         offset="0.5242967"
+         offset="0.5491274"
          id="stop6" /></linearGradient><linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5"
@@ -52,7 +52,8 @@
        y1="250"
        x2="2400"
        y2="250"
-       gradientUnits="userSpaceOnUse" /></defs><g
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1,0.59999998)" /></defs><g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"><image
@@ -62,7 +63,7 @@
        xlink:href="grant-van-cleemput-CL9Pl-5fXBU-unsplash.jpg"
        id="image1"
        x="1.489167e-13"
-       y="-577.67371" /><rect
+       y="-585.67371" /><rect
        style="display:none;fill:#10364f;fill-opacity:1;stroke-width:1.13014;stroke-linejoin:bevel"
        id="rect2"
        width="2400"
@@ -75,18 +76,18 @@
        y="463.18405"
        id="text1"><tspan
          sodipodi:role="line"
-         x="98.911224"
-         y="463.18405"
+         x="0"
+         y="0"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:62.2858px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.64435"
          id="tspan3">SCRO Chapitre Étudiant Montréal • CORS Montreal Student Chapter</tspan></text><rect
-       style="display:inline;fill:url(#linearGradient6);fill-opacity:0.68224299;stroke-width:1.20762;stroke-linejoin:bevel"
+       style="display:inline;fill:url(#linearGradient6);stroke-width:0.935418;stroke-linejoin:bevel"
        id="rect4"
        width="2400"
-       height="500"
+       height="300"
        x="-4.1512631e-06"
-       y="0" /><g
+       y="-8.8817842e-15" /><g
        id="g3-1"
-       transform="matrix(2.7923504,0,0,2.7923504,49.908652,-62.816062)"
+       transform="matrix(1.678116,0,0,1.678116,65.5672,-37.992752)"
        inkscape:export-filename="Logo_colors.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"
