@@ -17,16 +17,15 @@ Nous organisons une série mensuelle d’activités : ateliers techniques, conf�
 {% for e in upcoming %}
   {% if e.date >= site.time %}
 <div class="event-card">
-<div class="event-title"><strong>{{ e.title }}</strong></div>
-{% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
-{% assign m_index = e.date | date: "%-m" | minus: 1 %}
-{% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
-
-<div class="event-meta"><strong>Date :</strong> {{ dmy }} • <strong>Lieu :</strong> {{ e.location }} • <strong>Langue :</strong> {{ e.language }}</div>
-<div class="cta-row">
+  <div class="event-title"><strong>{{ e.title }}</strong></div>
+  {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+  {% assign m_index = e.date | date: "%-m" | minus: 1 %}
+  {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
+  <div class="event-meta"><strong>Date :</strong> {{ e.date | date: "%-d %B %Y" }} · <strong>Lieu :</strong> {{ e.location }} · <strong>Langue :</strong> {{ e.language }}</div>
+  <div class="cta-row">
     <a class="btn primary" href="{{ e.rsvp }}">S’inscrire</a>
     <a class="btn" href="{{ e.url | relative_url }}">Détails</a>
-</div>
+  </div>
 </div>
   {% endif %}
 {% endfor %}
