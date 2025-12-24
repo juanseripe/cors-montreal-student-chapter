@@ -20,7 +20,7 @@ layout: default
 
 <div class="event-meta">
   <strong>Date :</strong> {{ dmy }}
-  {% if t_start and t_start != "" %} • <strong>Heure :</strong> {{ t_start }}{% if page.end %}–{{ t_end }}{% endif %}{% endif %}
+  {% if t_start and t_start != "" %} • <strong>Heure :</strong> {{ t_start }}{% if page.end %} – {{ t_end }}{% endif %}{% endif %}
   {% if page.location %} • <strong>Lieu :</strong> {{ page.location }}{% endif %}
   {% if page.language %} • <strong>Langue :</strong> {{ page.language }}{% endif %}
 </div>
