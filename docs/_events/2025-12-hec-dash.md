@@ -1,17 +1,17 @@
 ---
 layout: default
-title: TBA
-date: 2026-01-29 13:00:00
-end: 2026-01-29 16:00:00
-location: Concordia University
+title: Dash
+date: 2026-12-02 16:00:00
+end: 2026-12-02 18:00:00
+location: HEC Montréal
 language: anglais
 rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
 ---
 
-# TBA
+# Dash
 
-**Date :** 29 janvier 2026
-**Lieu :** Concordia University
+**Date :** 2 décembre 2025
+**Lieu :** HEC Montréal
 **Langue :** anglais
 
 ## Description

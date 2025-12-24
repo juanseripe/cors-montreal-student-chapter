@@ -1,17 +1,17 @@
 ---
 layout: default
-title: TBA
-date: 2026-01-29 13:00:00
-end: 2026-01-29 16:00:00
-location: Concordia University
+title: Lancement
+date: 2025-11-06 15:30:00
+end: 2025-11-06 17:30:00
+location: CIRRELT/GERAD
 language: anglais
 rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
 ---
 
-# TBA
+# Lancement
 
-**Date :** 29 janvier 2026
-**Lieu :** Concordia University
+**Date :** 6 novembre 2025
+**Lieu :** CIRRELT/GERAD
 **Langue :** anglais
 
 ## Description

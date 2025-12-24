@@ -35,13 +35,48 @@ Nous organisons une série mensuelle d’activités : ateliers techniques, conf�
 
 ## Archives
 
-### 2025
-- **[Nom]** — [date] — [lieu] — [type] — [lien / supports]
-- **[Nom]** — [date] — [lieu] — [type] — [lien / supports]
+{% assign past = site.events | sort: "date" | reverse %}
 
-### 2024
-- **[Nom]** — [date] — [lieu] — [type] — [lien / supports]
-- **[Nom]** — [date] — [lieu] — [type] — [lien / supports]
+{% assign any_past = false %}
+{% for e in past %}
+  {% if e.date < site.time %}
+    {% assign any_past = true %}
+  {% endif %}
+{% endfor %}
+
+{% if any_past == false %}
+Aucun événement archivé pour le moment.
+{% else %}
+
+{% assign current_year = "" %}
+
+{% for e in past %}
+  {% if e.date < site.time %}
+
+    {% assign y = e.date | date: "%Y" %}
+    {% if y != current_year %}
+      {% assign current_year = y %}
+### {{ current_year }}
+    {% endif %}
+
+    {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+    {% assign m_index = e.date | date: "%-m" | minus: 1 %}
+    {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
+
+<div class="event-card">
+  <div class="event-title"><strong>{{ e.title }}</strong></div>
+  <div class="event-meta">
+    <strong>Date :</strong> {{ dmy }} • <strong>Lieu :</strong> {{ e.location }} • <strong>Détails :</strong>
+    <a class="event-details-link" href="{{ e.url | relative_url }}">Voir</a>
+  </div>
+
+
+</div>
+
+  {% endif %}
+{% endfor %}
+
+{% endif %}
 
 ---
 
