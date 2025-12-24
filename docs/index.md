@@ -36,12 +36,11 @@ Nous proposons une programmation mensuelle (ateliers, conférences, panels, rés
 {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
 {% assign m_index = next.date | date: "%-m" | minus: 1 %}
 {% assign dmy = next.date | date: "%-d" | append: " " | append: months[m_index] | append: " " | append: (next.date | date: "%Y") %}
-**Date :** {{ dmy }} · **Lieu :** {{ next.location }} · **Langue :** {{ next.language }}
+**Date :** {{ dmy }} • **Lieu :** {{ next.location }} • **Langue :** {{ next.language }}
 
 <div class="cta-row">
   <a class="btn primary" href="{{ next.rsvp }}">S’inscrire</a>
   <a class="btn" href="{{ next.url | relative_url }}">Détails</a>
-  <a class="btn" href="{{ site.baseurl }}/evenements.html">Calendrier & archives</a>
 </div>
 {% endif %}
 
