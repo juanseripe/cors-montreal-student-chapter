@@ -47,7 +47,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Bruno Machado Pacheco</strong></div>
     <div class="team-meta"><strong>Secrétaire</strong> • Université de Montréal</div>
-    <div class="team-email"><a href="mailto:bruno.machado.pacheco@umontreal.ca">[bruno.machado.pacheco@umontreal.ca]</a></div>
+    <div class="team-email"><a href="mailto:bruno.machado.pacheco@umontreal.ca">[bruno.machado.<wbr>pacheco@umontreal.ca]</a></div>
   </div>
 </div>
 
