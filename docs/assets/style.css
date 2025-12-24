@@ -294,7 +294,7 @@ hr {
   :root { --pad: 14px; }
 
   .hero{
-    height: clamp(160px, 28vw, 240px);
+    height: clamp(160px, 15vw, 240px);
     overflow: hidden;
   }
 
