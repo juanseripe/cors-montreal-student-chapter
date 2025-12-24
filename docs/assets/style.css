@@ -233,6 +233,25 @@ hr {
   margin: 22px 0;
 }
 
+.about-intro{ 
+  display:flex;
+  align-items:flex-start;
+  gap:14px; 
+}
+
+.about-intro p{ margin:0; }
+
+.about-logo{ 
+  width:56px; 
+  height:auto; 
+  flex:0 0 auto; 
+}
+
+.event-list{
+  margin: 10px 0 18px;
+  padding-left: 18px;
+}
+
 .team-list{
   display: grid;
   grid-template-columns: 1fr;
@@ -317,11 +336,10 @@ hr {
     border-radius: 9px;
     font-size: 0.95rem;
   }
-}
 
-.event-list{
-  margin: 10px 0 18px;
-  padding-left: 18px;
+  .about-intro{ align-items:center; }
+  
+  .about-logo{ width:44px; } 
 }
 
 @media (min-width: 820px){

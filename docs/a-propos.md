@@ -7,7 +7,12 @@ title: À propos
 
 ---
 
-Le chapitre étudiant montréalais de la [**SCRO**](https://www.cors.ca/fr/node/6) rassemble les étudiantes et étudiants aux cycles supérieurs en recherche opérationnelle et en sciences de la décision à Montréal. Nous développons une communauté interuniversitaire axée sur le partage, l’apprentissage et les collaborations.
+<div class="about-intro">
+  <img class="about-logo" src="{{ site.baseurl }}/assets/img/cors-logo.png" alt="Logo de la SCRO">
+  <p>
+    Le chapitre étudiant montréalais de la <a href="https://www.cors.ca/fr/node/6">SCRO</a> rassemble les étudiantes et étudiants aux cycles supérieurs en recherche opérationnelle et en sciences de la décision à Montréal. Nous développons une communauté interuniversitaire axée sur le partage, l’apprentissage et les collaborations.
+  </p>
+</div>
 
 ---
 
