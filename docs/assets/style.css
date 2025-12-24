@@ -50,8 +50,6 @@ body {
 
 /* Top nav */
 .main-nav {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
   background: var(--stripe-bg);
 }
 
@@ -108,8 +106,8 @@ hr {
 
 /* Footer */
 .site-footer {
-  background: var(--footer-bg);
-  color: var(--footer-fg);
+  background: var(--stripe-bg);
+  color: var(--stripe-fg);
   height: 80px;
   width: 100%;
   margin-top: 32px;
