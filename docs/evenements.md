@@ -7,18 +7,25 @@ title: Événements
 
 ---
 
-Nous organisons une série mensuelle d’activités : ateliers techniques, conférences/panels, et événements de réseautage.
+Nous organisons une série mensuelle d’activités : ateliers techniques, conférences/panels et événements de réseautage.
 
 ---
 
 ## À venir
 
-> **[Titre de l’événement]**  
-> **Date :** [JJ mois AAAA] · **Lieu :** [campus / salle / en ligne] · **Langue :** [FR / EN / bilingue]  
-> [1–2 phrases de description.]  
-> **Inscription :** [lien]
-
-*(Ajoute ici les prochains événements — un bloc par événement.)*
+{% assign upcoming = site.events | sort: "date" %}
+{% for e in upcoming %}
+  {% if e.date >= site.time %}
+<div class="event-card">
+  <div class="event-title"><strong>{{ e.title }}</strong></div>
+  <div class="event-meta"><strong>Date :</strong> {{ e.date | date: "%-d %B %Y" }} · <strong>Lieu :</strong> {{ e.location }} · <strong>Langue :</strong> {{ e.language }}</div>
+  <div class="cta-row">
+    <a class="btn primary" href="{{ e.rsvp }}">S’inscrire</a>
+    <a class="btn" href="{{ e.url | relative_url }}">Détails</a>
+  </div>
+</div>
+  {% endif %}
+{% endfor %}
 
 ---
 
@@ -30,9 +37,15 @@ Nous organisons une série mensuelle d’activités : ateliers techniques, conf�
 
 ### 2024
 - **[Nom]** — [date] — [lieu] — [type] — [lien / supports]
+- **[Nom]** — [date] — [lieu] — [type] — [lien / supports]
 
 ---
 
 ## Proposer une idée
 
-Tu veux proposer un atelier, un·e invité·e, ou un format? Écris-nous : **[email / formulaire]**.
+Vous souhaitez proposer un atelier, un·e invité·e, ou un format ? Écrivez-nous :
+<div class="cta-row">
+  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Formulaire</a>
+  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a>
+  <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Courriel</a>
+</div>

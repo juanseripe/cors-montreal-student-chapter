@@ -40,7 +40,7 @@ Nous proposons une programmation mensuelle (ateliers, conférences, panels, rés
 
 ## Nous contacter
 
-Pour toute question, proposition d’atelier ou idée d’événement, écrivez-nous par :
+Pour toute question, proposition d’atelier ou idée d’événement, écrivez-nous :
 
 <div class="cta-row">
   <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Formulaire</a>
