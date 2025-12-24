@@ -5,7 +5,11 @@ title: Événements
 
 # Événements
 
-Nous organisons une **série mensuelle** d’activités : ateliers techniques, conférences/panels, et événements de réseautage.
+---
+
+Nous organisons une série mensuelle d’activités : ateliers techniques, conférences/panels, et événements de réseautage.
+
+---
 
 ## À venir
 
