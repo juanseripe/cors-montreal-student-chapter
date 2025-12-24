@@ -233,27 +233,40 @@ hr {
   margin: 22px 0;
 }
 
-.subtitle-row{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 10px 12px;
+.team-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.team-card{
   border: 1px solid var(--border);
   border-radius: 12px;
-  margin: 10px 0;
+  padding: 12px 14px;
   background: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.subtitle-text{
-  flex: 1;
+.team-photo{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex: 0 0 auto;
 }
 
-.btn.small{
-  padding: 6px 10px;
-  border-radius: 10px;
-  font-weight: 600;
-  white-space: nowrap;
+.team-name{
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.team-meta{
+  color: var(--muted);
 }
 
 /* Footer */
@@ -268,6 +281,8 @@ hr {
 /* Small screens */
 @media (max-width: 640px) {
   :root { --pad: 16px; }
-  .subtitle-row{ flex-direction: column; align-items: stretch; }
-  .btn.small{ width: 100%; text-align: center; }
+}
+
+@media (min-width: 820px){
+  .team-list { grid-template-columns: 1fr 1fr; }
 }

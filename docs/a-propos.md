@@ -36,17 +36,10 @@ Nous agissons en proximité avec l’écosystème montréalais en recherche opé
 
 [Université de Montréal](https://www.umontreal.ca/) •
 [Polytechnique Montréal](https://www.polymtl.ca/) •
-[HEC Montréal](https://www.hec.ca/en) •
+[HEC Montréal](https://www.hec.ca/) •
 [Concordia University](https://www.concordia.ca/) •
 [UQAM](https://uqam.ca/) •
 [École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/) •
 [McGill University](https://www.mcgill.ca/) •
-[GERAD](https://www.gerad.ca/) •
+[GERAD](https://www.gerad.ca/fr) •
 [CIRRELT](https://www.cirrelt.ca/)
-
----
-
-<div class="cta-row">
-  <a class="btn primary" href="{{ site.baseurl }}/evenements.html">Voir les événements</a>
-  <a class="btn" href="{{ site.baseurl }}/equipe.html">Découvrir l’équipe</a>
-</div>

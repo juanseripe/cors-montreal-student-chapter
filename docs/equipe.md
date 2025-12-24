@@ -5,30 +5,62 @@ title: Équipe
 
 # Équipe
 
-Le chapitre est **piloté par des étudiant·e·s**. Nous travaillons en collaboration avec les partenaires académiques et les centres de recherche pour organiser des activités utiles et accessibles.
+---
 
-## Comité exécutif
-
-### [Nom Prénom] — Présidence
-**Affiliation :** [HEC / Poly / UdeM / UQÀM]  
-**Rôle :** coordination générale, partenariats, vision.
-
-### [Nom Prénom] — Vice-présidence (communications)
-**Affiliation :** [ … ]  
-**Rôle :** site web, annonces, LinkedIn, visuels.
-
-### [Nom Prénom] — Trésorerie
-**Affiliation :** [ … ]  
-**Rôle :** budget, remboursements, suivi financier.
-
-### [Nom Prénom] — Événements
-**Affiliation :** [ … ]  
-**Rôle :** programmation, logistique, accueil.
-
-*(Ajoute/retire les postes selon ta structure.)*
+Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne la programmation, les communications et l’organisation des activités tout au long de l’année.
 
 ---
 
-## Rejoindre l’équipe
+## Comité exécutif
 
-Les rôles évoluent d’une année à l’autre. Si tu veux contribuer (logistique, animation, contenus, design), écris-nous : **[email]**.
+<div class="team-list">
+
+<div class="team-card">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/camille-pincon.jpg" alt="Camille Pinçon">
+  <div>
+    <div class="team-name">Camille Pinçon</div>
+    <div class="team-meta"><strong>Présidente</strong> · Polytechnique Montréal</div>
+  </div>
+</div>
+
+<div class="team-card">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/max-bourgeat.jpg" alt="Max Bourgeat">
+  <div>
+    <div class="team-name">Max Bourgeat</div>
+    <div class="team-meta"><strong>Vice-président</strong> · Polytechnique Montréal</div>
+  </div>
+</div>
+
+<div class="team-card">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/benedikt-kern.jpg" alt="Benedikt Kern">
+  <div>
+    <div class="team-name">Benedikt Kern</div>
+    <div class="team-meta"><strong>Trésorier</strong> · Concordia University</div>
+  </div>
+</div>
+
+<div class="team-card">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/bruno-machado-pacheco.jpg" alt="Bruno Machado Pacheco">
+  <div>
+    <div class="team-name">Bruno Machado Pacheco</div>
+    <div class="team-meta"><strong>Secrétaire</strong> · Université de Montréal</div>
+  </div>
+</div>
+
+<div class="team-card">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/juan-sebastian-riveros-perez.jpg" alt="Juan Sebastian Riveros Perez">
+  <div>
+    <div class="team-name">Juan Sebastian Riveros Perez</div>
+    <div class="team-meta"><strong>Vice-président aux communications</strong> · HEC Montréal</div>
+  </div>
+</div>
+
+<div class="team-card">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/flore-caye.jpg" alt="Flore Caye">
+  <div>
+    <div class="team-name">Flore Caye</div>
+    <div class="team-meta"><strong>Vice-présidente à l’événementiel</strong> · Polytechnique Montréal</div>
+  </div>
+</div>
+
+</div>
