@@ -6,3 +6,5 @@ collections:
   events:
     output: true
     permalink: /evenements/:name.html
+
+future: true

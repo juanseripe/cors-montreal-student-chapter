@@ -6,6 +6,7 @@ title: Événements
 # Événements
 
 ---
+Collections: {{ site.collections | map: "label" | join: ", " }} — events count: {{ site.events | size }}
 
 Nous organisons une série mensuelle d’activités : ateliers techniques, conférences/panels et événements de réseautage.
 
