@@ -271,6 +271,7 @@ hr {
 }
 
 .team-email a{
+  color: var(--fg);
   text-decoration: none;
 }
 
