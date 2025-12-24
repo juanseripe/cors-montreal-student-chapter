@@ -7,31 +7,46 @@ title: À propos
 
 ---
 
-Le **CORS Montréal — Student Chapter (CORS / SCRO)** rassemble les étudiant·e·s aux cycles supérieurs en **recherche opérationnelle (RO)** et **sciences de la décision** à Montréal, au sein d’une communauté interuniversitaire.
+Le chapitre étudiant montréalais de la [**SCRO**](https://www.cors.ca/fr/node/6) rassemble les étudiantes et étudiants aux cycles supérieurs en recherche opérationnelle et en sciences de la décision à Montréal. Nous développons une communauté interuniversitaire axée sur le partage, l’apprentissage et les collaborations.
 
-## Mission
+---
 
-- **Rassembler et soutenir** la communauté étudiante en RO et sciences de la décision à Montréal  
-- **Favoriser l’échange de connaissances** et la collaboration interuniversitaire  
-- **Développer des compétences** grâce à des ateliers techniques et des échanges professionnels  
-- **Créer des ponts** entre universités, centres de recherche (**CIRRELT**, **GERAD**) et industrie, en cohérence avec la mission de **CORS/SCRO**
+## Notre mission
 
-## Ce qui nous guide
+Rassembler et soutenir la communauté étudiante en recherche opérationnelle à Montréal, en favorisant l’échange de connaissances, la collaboration interuniversitaire et le développement académique et professionnel. Nous souhaitons créer un espace inclusif où les étudiantes et étudiants peuvent apprendre, partager, et établir des liens avec le milieu universitaire, les centres de recherche et le monde industriel.
 
-### Communauté d’abord
-Un chapitre **par et pour les étudiant·e·s**, accueillant, inclusif et orienté vers l’entraide.
+---
 
-### Contenu utile
-Des activités **pratiques**, adaptées aux besoins réels (recherche, enseignement, industrie).
+## Ce que nous faisons
 
-### Collaboration inter-campus
-Un espace commun pour rencontrer des pairs, partager des méthodes et construire des projets.
+### Ateliers
+Formations et démonstrations autour d’outils et de méthodes en recherche opérationnelle, avec un objectif de transfert pratique.
 
-## Notre écosystème
+### Conférences et panels
+Présentations de travaux de recherche et discussions sur des thèmes liés à la discipline, aux parcours académiques et à la transition vers l’industrie.
 
-Le chapitre réunit notamment des étudiant·e·s de **HEC Montréal**, **Polytechnique Montréal**, **Université de Montréal**, **ESG UQÀM**, etc., en proximité avec **CIRRELT** et **GERAD**.
+### Réseautage
+Rencontres conviviales pour connecter les étudiant·e·s entre campus, favoriser l’entraide et stimuler les échanges.
+
+---
+
+## Ancrage et collaboration
+
+Nous agissons en proximité avec l’écosystème montréalais en recherche opérationnelle et sciences de la décision :
+
+[Université de Montréal](https://www.umontreal.ca/) •
+[Polytechnique Montréal](https://www.polymtl.ca/) •
+[HEC Montréal](https://www.hec.ca/en) •
+[Concordia University](https://www.concordia.ca/) •
+[UQAM](https://uqam.ca/) •
+[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/) •
+[McGill University](https://www.mcgill.ca/) •
+[GERAD](https://www.gerad.ca/) •
+[CIRRELT](https://www.cirrelt.ca/)
+
+---
 
 <div class="cta-row">
-  <a class="btn primary" href="/events/">Voir les événements</a>
-  <a class="btn" href="[LIEN_LINKEDIN]">Suivre sur LinkedIn</a>
+  <a class="btn primary" href="{{ site.baseurl }}/evenements.html">Voir les événements</a>
+  <a class="btn" href="{{ site.baseurl }}/equipe.html">Découvrir l’équipe</a>
 </div>
