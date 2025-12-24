@@ -243,17 +243,17 @@ hr {
 .team-card{
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 10px 12px;
   background: #fff;
 
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .team-photo{
-  width: 56px;
-  height: 56px;
+  width: 32px;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -261,12 +261,9 @@ hr {
 }
 
 .team-name{
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.team-meta{
   color: var(--muted);
+  margin-top: 2px;
+  font-size: 0.95rem;
 }
 
 /* Footer */

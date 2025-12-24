@@ -13,7 +13,9 @@ Le chapitre étudiant montréalais de la [**SCRO**](https://www.cors.ca/fr/node/
 
 ## Notre mission
 
-Rassembler et soutenir la communauté étudiante en recherche opérationnelle à Montréal, en favorisant l’échange de connaissances, la collaboration interuniversitaire et le développement académique et professionnel. Nous souhaitons créer un espace inclusif où les étudiantes et étudiants peuvent apprendre, partager, et établir des liens avec le milieu universitaire, les centres de recherche et le monde industriel.
+Rassembler et soutenir la communauté étudiante en recherche opérationnelle à Montréal, en favorisant l’échange de connaissances, la collaboration interuniversitaire et le développement académique et professionnel.
+
+Nous souhaitons créer un espace inclusif où les étudiantes et étudiants peuvent apprendre, partager, et établir des liens avec le milieu universitaire, les centres de recherche et le monde industriel.
 
 ---
 
