@@ -2,7 +2,7 @@ title: SCRO Chapitre Étudiant Montréal • CORS Montreal Student Chapter
 description: Étudiants en RO à Montréal • OR Students in Montreal
 baseurl: "/cors-montreal-student-chapter"
 
- collections:
+collections:
   events:
     output: true
     permalink: /events/:name.html
