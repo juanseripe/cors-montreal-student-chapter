@@ -317,6 +317,9 @@ hr {
     border-radius: 9px;
     font-size: 0.95rem;
   }
+  .team-email{
+    font-size: 0.85rem;
+  }
 }
 
 @media (min-width: 820px){
