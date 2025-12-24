@@ -252,7 +252,7 @@ hr {
 }
 
 .team-photo{
-  width: 32px;
+  width: 40px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -261,9 +261,8 @@ hr {
 }
 
 .team-name{
-  color: var(--muted);
+  color: var(--accent);
   margin-top: 2px;
-  font-size: 0.95rem;
 }
 
 /* Footer */

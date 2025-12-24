@@ -18,7 +18,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
 <div class="team-card">
   <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/camille-pincon.jpg" alt="Camille Pinçon">
   <div>
-    <div class="team-name">Camille Pinçon</div>
+    <div class="team-name"><strong>Camille Pinçon</strong></div>
     <div class="team-meta"><strong>Présidente</strong> · Polytechnique Montréal</div>
   </div>
 </div>
@@ -26,7 +26,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
 <div class="team-card">
   <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/max-bourgeat.jpg" alt="Max Bourgeat">
   <div>
-    <div class="team-name">Max Bourgeat</div>
+    <div class="team-name"><strong>Max Bourgeat</strong></div>
     <div class="team-meta"><strong>Vice-président</strong> · Polytechnique Montréal</div>
   </div>
 </div>
@@ -34,7 +34,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
 <div class="team-card">
   <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/benedikt-kern.jpg" alt="Benedikt Kern">
   <div>
-    <div class="team-name">Benedikt Kern</div>
+    <div class="team-name"><strong>Benedikt Kern</strong></div>
     <div class="team-meta"><strong>Trésorier</strong> · Concordia University</div>
   </div>
 </div>
@@ -42,7 +42,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
 <div class="team-card">
   <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/bruno-machado-pacheco.jpg" alt="Bruno Machado Pacheco">
   <div>
-    <div class="team-name">Bruno Machado Pacheco</div>
+    <div class="team-name"><strong>Bruno Machado Pacheco</strong></div>
     <div class="team-meta"><strong>Secrétaire</strong> · Université de Montréal</div>
   </div>
 </div>
@@ -50,7 +50,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
 <div class="team-card">
   <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/juan-sebastian-riveros-perez.jpg" alt="Juan Sebastian Riveros Perez">
   <div>
-    <div class="team-name">Juan Sebastian Riveros Perez</div>
+    <div class="team-name"><strong>Juan Sebastian Riveros Perez</strong></div>
     <div class="team-meta"><strong>Vice-président aux communications</strong> · HEC Montréal</div>
   </div>
 </div>
@@ -58,7 +58,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
 <div class="team-card">
   <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/flore-caye.jpg" alt="Flore Caye">
   <div>
-    <div class="team-name">Flore Caye</div>
+    <div class="team-name"><strong>Flore Caye</strong></div>
     <div class="team-meta"><strong>Vice-présidente à l’événementiel</strong> · Polytechnique Montréal</div>
   </div>
 </div>
