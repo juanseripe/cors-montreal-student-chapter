@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+{% assign m_index = page.date | date: "%-m" | minus: 1 %}
+{% capture dmy %}{{ page.date | date: "%-d" }} {{ months[m_index] }} {{ page.date | date: "%Y" }}{% endcapture %}
+{% capture t_start %}{{ page.date | date: "%H:%M" }}{% endcapture %}
+{% if page.end %}
+  {% capture t_end %}{{ page.end | date: "%H:%M" }}{% endcapture %}
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+
+{% if page.banner %}
+<div class="event-banner">
+  <img class="event-banner-image" src="{{ page.banner | relative_url }}" alt="Bannière — {{ page.title }}">
+</div>
+{% endif %}
+
+<div class="event-meta">
+  <strong>Date :</strong> {{ dmy }}
+  {% if t_start and t_start != "" %} · <strong>Heure :</strong> {{ t_start }}{% if page.end %}–{{ t_end }}{% endif %}{% endif %}
+  {% if page.location %} · <strong>Lieu :</strong> {{ page.location }}{% endif %}
+  {% if page.language %} · <strong>Langue :</strong> {{ page.language }}{% endif %}
+</div>
+
+{% if page.rsvp and page.date > site.time %}
+<div class="cta-row">
+  <a class="btn primary" href="{{ page.rsvp }}">S’inscrire</a>
+</div>
+{% endif %}
+
+{{ content }}
