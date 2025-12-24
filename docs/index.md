@@ -26,15 +26,24 @@ Nous proposons une programmation mensuelle (ateliers, conférences, panels, rés
   <a class="btn" href="{{ site.baseurl }}/evenements.html">Voir la programmation complète</a>
 </div>
 
+{% assign upcoming = site.events | sort: "date" | where_exp: "e", "e.date >= site.time" %}
+{% assign next = upcoming.first %}
+
+{% if next %}
 ### Prochain événement
 
-**[Titre de l’événement]**  
-**Date :** 29 janvier 2026 · **Lieu :** Concordia · **Langue :** anglais  
-[1 phrase de description.]
+**{{ next.title }}**  
+{% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+{% assign m_index = next.date | date: "%-m" | minus: 1 %}
+{% assign dmy = next.date | date: "%-d" | append: " " | append: months[m_index] | append: " " | append: (next.date | date: "%Y") %}
+**Date :** {{ dmy }} · **Lieu :** {{ next.location }} · **Langue :** {{ next.language }}
 
 <div class="cta-row">
-  <a class="btn primary" href="https://forms.gle/yotLNNLuEaB2H8eC8">S’inscrire</a>
+  <a class="btn primary" href="{{ next.rsvp }}">S’inscrire</a>
+  <a class="btn" href="{{ next.url | relative_url }}">Détails</a>
+  <a class="btn" href="{{ site.baseurl }}/evenements.html">Calendrier & archives</a>
 </div>
+{% endif %}
 
 ---
 

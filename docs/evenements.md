@@ -18,7 +18,10 @@ Nous organisons une série mensuelle d’activités : ateliers techniques, conf�
   {% if e.date >= site.time %}
 <div class="event-card">
   <div class="event-title"><strong>{{ e.title }}</strong></div>
-  <div class="event-meta"><strong>Date :</strong> {{ e.date | date: "%-d %B %Y" }} · <strong>Lieu :</strong> {{ e.location }} · <strong>Langue :</strong> {{ e.language }}</div>
+  {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+  {% assign m_index = e.date | date: "%-m" | minus: 1 %}
+  {% assign dmy = e.date | date: "%-d" | append: " " | append: months[m_index] | append: " " | append: (e.date | date: "%Y") %}
+  <div class="event-meta"><strong>Date :</strong> {{ dmy }} · <strong>Lieu :</strong> {{ e.location }} · <strong>Langue :</strong> {{ e.language }}</div>
   <div class="cta-row">
     <a class="btn primary" href="{{ e.rsvp }}">S’inscrire</a>
     <a class="btn" href="{{ e.url | relative_url }}">Détails</a>
