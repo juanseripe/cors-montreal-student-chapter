@@ -5,6 +5,8 @@ title: À propos
 
 # À propos
 
+---
+
 Le **CORS Montréal — Student Chapter (CORS / SCRO)** rassemble les étudiant·e·s aux cycles supérieurs en **recherche opérationnelle (RO)** et **sciences de la décision** à Montréal, au sein d’une communauté interuniversitaire.
 
 ## Mission

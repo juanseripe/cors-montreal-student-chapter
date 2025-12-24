@@ -13,26 +13,7 @@ Le chapitre étudiant montréalais de la SCRO (Société canadienne de recherche
 
 
 <div class="cta-row">
-  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">Suivre-nous sur LinkedIn</a>
-</div>
-
----
-
-## Ce que vous trouverez ici
-
-<div class="subtitle-row">
-  <div class="subtitle-text"><strong>À propos</strong> : mission, cadre interuniversitaire</div>
-  <a class="btn small" href="/a-propos/">Voir</a>
-</div>
-
-<div class="subtitle-row">
-  <div class="subtitle-text"><strong>Événements</strong> : ateliers techniques, conférences/panels, activités de communauté</div>
-  <a class="btn small" href="/evenements/">Voir</a>
-</div>
-
-<div class="subtitle-row">
-  <div class="subtitle-text"><strong>Équipe</strong> : comité exécutif et personnes impliquées</div>
-  <a class="btn small" href="/equipe/">Voir</a>
+  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">Suivez-nous sur LinkedIn</a>
 </div>
 
 ---
@@ -41,22 +22,25 @@ Le chapitre étudiant montréalais de la SCRO (Société canadienne de recherche
 
 Nous proposons une programmation mensuelle (ateliers, conférences, panels, réseautage) conçue pour être accessible et utile tout au long de l’année universitaire.
 
+<div class="cta-row">
+  <a class="btn" href="{{ site.baseurl }}/evenements.html">Voir la programmation complète</a>
+</div>
+
 ### Prochain événement
 
 **[Titre de l’événement]**  
-**Date :** [JJ mois AAAA] · **Lieu :** [campus / salle / en ligne] · **Langue :** [FR / EN / bilingue]  
+**Date :** 29 janvier 2026 · **Lieu :** Concordia · **Langue :** anglais  
 [1 phrase de description.]
 
 <div class="cta-row">
-  <a class="btn primary" href="[LIEN_INSCRIPTION]">S’inscrire</a>
-  <a class="btn" href="/evenements/">Calendrier & archives</a>
+  <a class="btn primary" href="https://forms.gle/yotLNNLuEaB2H8eC8">S’inscrire</a>
 </div>
 
 ---
 
 ## Nous contacter
 
-Pour une question, une proposition d’atelier, ou une idée d’événement : **écrivez-nous**.
+Pour toute question, proposition d’atelier ou idée d’événement, écrivez-nous par :
 
 <div class="cta-row">
   <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Formulaire</a>
