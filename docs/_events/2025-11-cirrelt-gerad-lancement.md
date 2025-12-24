@@ -11,10 +11,7 @@ banner: /assets/img/events/2025-11-cirrelt-gerad-lancement.png
 
 ## Description
 
-Pending
-
-<!-- ## Informations pratiques
-
-- Accès : 
-- Public : 
-- Contact :  -->
+Quatre invité·es partageront leurs expériences et perspectives autour de trois grands thèmes :
+🎓 La vie étudiante aux cycles supérieurs
+🏫 Construire une carrière en milieu académique
+🏢 Commencer une carrière en industrie

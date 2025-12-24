@@ -67,10 +67,7 @@ Aucun événement archivé pour le moment.
 
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ dmy }} • {{ e.location }}</div>
-    <div class="event-item-links">
-      <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a>
-    </div>
+    <div class="event-item-meta">{{ dmy }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a></div>
   </li>
 {% endfor %}
 </ul>

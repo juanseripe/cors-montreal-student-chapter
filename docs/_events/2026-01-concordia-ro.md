@@ -12,9 +12,3 @@ rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
 ## Description
 
 Pending
-
-<!-- ## Informations pratiques
-
-- Accès : 
-- Public : 
-- Contact :  -->

@@ -12,9 +12,3 @@ banner: /assets/img/events/2025-12-hec-dash.png
 ## Description
 
 Dans cet atelier pratique, vous apprendrez à créer des tableaux de bord interactifs en Python avec Dash, un cadre libre et open source. Axé sur les applications en recherche opérationnelle, l’atelier explorera la création de visualisations réactives, la conception et la personnalisation de mises en page, ainsi que la transformation de données en RO en interfaces claires, intuitives et interactives.
-
-<!-- ## Informations pratiques
-
-- Accès : 
-- Public : 
-- Contact :  -->
