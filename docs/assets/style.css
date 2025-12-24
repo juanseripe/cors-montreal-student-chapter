@@ -319,6 +319,11 @@ hr {
   }
 }
 
+.event-list{
+  margin: 10px 0 18px;
+  padding-left: 18px;
+}
+
 @media (min-width: 820px){
   .team-list { grid-template-columns: 1fr 1fr; }
 }

@@ -6,7 +6,6 @@ title: Événements
 # Événements
 
 ---
-Collections: {{ site.collections | map: "label" | join: ", " }} — events count: {{ site.events | size }}
 
 Nous organisons une série mensuelle d’activités : ateliers techniques, conférences/panels et événements de réseautage.
 
@@ -14,68 +13,67 @@ Nous organisons une série mensuelle d’activités : ateliers techniques, conf�
 
 ## À venir
 
-{% assign upcoming = site.events | sort: "date" %}
+{% assign upcoming_all = site.events | sort: "date" %}
+{% assign upcoming = upcoming_all | where_exp: "e", "e.date >= site.time" %}
+
+{% if upcoming == empty %}
+Aucun événement à venir pour le moment.
+{% else %}
+<ul class="event-list">
 {% for e in upcoming %}
-  {% if e.date >= site.time %}
-<div class="event-card">
-  <div class="event-title"><strong>{{ e.title }}</strong></div>
   {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
   {% assign m_index = e.date | date: "%-m" | minus: 1 %}
   {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
-  <div class="event-meta"><strong>Date :</strong> {{ dmy }} • <strong>Lieu :</strong> {{ e.location }} • <strong>Langue :</strong> {{ e.language }}</div>
-  <div class="cta-row">
-    <a class="btn primary" href="{{ e.rsvp }}">S’inscrire</a>
-    <a class="btn" href="{{ e.url | relative_url }}">Détails</a>
-  </div>
-</div>
-  {% endif %}
+
+  <li class="event-item">
+    <div class="event-item-title"><strong>{{ e.title }}</strong></div>
+    <div class="event-item-meta">{{ dmy }} • {{ e.location }}</div>
+    <div class="event-item-links">
+      <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a>
+      {% if e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">S’inscrire</a>{% endif %}
+    </div>
+  </li>
 {% endfor %}
+</ul>
+{% endif %}
 
 ---
 
 ## Archives
 
-{% assign past = site.events | sort: "date" | reverse %}
+{% assign past_all = site.events | sort: "date" | reverse %}
+{% assign past = past_all | where_exp: "e", "e.date < site.time" %}
 
-{% assign any_past = false %}
-{% for e in past %}
-  {% if e.date < site.time %}
-    {% assign any_past = true %}
-  {% endif %}
-{% endfor %}
-
-{% if any_past == false %}
+{% if past == empty %}
 Aucun événement archivé pour le moment.
 {% else %}
-
 {% assign current_year = "" %}
 
 {% for e in past %}
-  {% if e.date < site.time %}
-
-    {% assign y = e.date | date: "%Y" %}
-    {% if y != current_year %}
-      {% assign current_year = y %}
-### {{ current_year }}
+  {% assign y = e.date | date: "%Y" %}
+  {% if y != current_year %}
+    {% if current_year != "" %}
+</ul>
     {% endif %}
+    {% assign current_year = y %}
 
-    {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
-    {% assign m_index = e.date | date: "%-m" | minus: 1 %}
-    {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
-
-<div class="event-card">
-  <div class="event-title"><strong>{{ e.title }}</strong></div>
-  <div class="event-meta">
-    <strong>Date :</strong> {{ dmy }} • <strong>Lieu :</strong> {{ e.location }} • <strong>Détails :</strong>
-    <a class="event-details-link" href="{{ e.url | relative_url }}">Voir</a>
-  </div>
-
-
-</div>
-
+### {{ current_year }}
+<ul class="event-list">
   {% endif %}
-{% endfor %}
 
+  {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
+  {% assign m_index = e.date | date: "%-m" | minus: 1 %}
+  {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
+
+  <li class="event-item">
+    <div class="event-item-title"><strong>{{ e.title }}</strong></div>
+    <div class="event-item-meta">{{ dmy }} • {{ e.location }}</div>
+    <div class="event-item-links">
+      <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a>
+    </div>
+  </li>
+{% endfor %}
+</ul>
 {% endif %}
 
 ---
