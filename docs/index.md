@@ -35,7 +35,7 @@ Nous proposons une programmation mensuelle (ateliers, conférences, panels, rés
 **{{ next.title }}**  
 {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
 {% assign m_index = next.date | date: "%-m" | minus: 1 %}
-{% assign dmy = next.date | date: "%-d" | append: " " | append: months[m_index] | append: " " | append: (next.date | date: "%Y") %}
+{% capture dmy %}{{ next.date | date: "%-d" }} {{ months[m_index] }} {{ next.date | date: "%Y" }}{% endcapture %}
 **Date :** {{ dmy }} • **Lieu :** {{ next.location }} • **Langue :** {{ next.language }}
 
 <div class="cta-row">

@@ -5,4 +5,4 @@ baseurl: "/cors-montreal-student-chapter"
 collections:
   events:
     output: true
-    permalink: /events/:name.html
+    permalink: /evenements/:name.html
