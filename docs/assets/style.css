@@ -252,7 +252,7 @@ hr {
 }
 
 .team-photo{
-  width: 40px;
+  width: 55px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -263,6 +263,20 @@ hr {
 .team-name{
   color: var(--accent);
   margin-top: 2px;
+}
+
+.team-email{
+  margin-top: 2px;
+  font-size: 0.95rem;
+}
+
+.team-email a{
+  text-decoration: none;
+}
+
+.team-email a:hover{
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Footer */
