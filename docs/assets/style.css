@@ -233,13 +233,17 @@ hr {
   margin: 22px 0;
 }
 
-.about-intro{ 
-  display:flex;
-  align-items:flex-start;
-  gap:14px; 
+.about-intro{
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
-.about-intro p{ margin:0; }
+.about-intro p{
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
 
 .about-logo{ 
   width:150px; 
@@ -339,7 +343,7 @@ hr {
 
   .about-intro{ align-items:center; }
   
-  .about-logo{ width:44px; } 
+  .about-logo{ width:100px; } 
 }
 
 @media (min-width: 820px){
