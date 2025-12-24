@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Lancement
+title: Tracer sa voie en recherche opérationnelle – études, carrière et au-delà
 date: 2025-11-06 15:30:00
 end: 2025-11-06 17:30:00
 location: CIRRELT/GERAD
@@ -11,10 +11,10 @@ banner: /assets/img/events/2025-11-cirrelt-gerad-lancement.png
 
 ## Description
 
-[Ajoutez ici la description complète de l’événement.]
+Pending
 
-## Informations pratiques
+<!-- ## Informations pratiques
 
 - Accès : 
 - Public : 
-- Contact : 
+- Contact :  -->
