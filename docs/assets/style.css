@@ -198,6 +198,23 @@ body {
   font-weight: 700;
 }
 
+.nav-spacer{ flex: 1; }
+
+.nav-lang{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-sep{
+  color: rgba(255,255,255,0.8);
+  font-weight: 600;
+}
+
+.nav-lang a.active{
+  background: rgba(255,255,255,0.18);
+}
+
 /* Page content */
 .page-content {
   max-width: var(--maxw);
