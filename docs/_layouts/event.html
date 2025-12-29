@@ -26,7 +26,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <div class="event-meta">
-  <strong>Date :</strong> {{ dmy }}
+  <strong>Date{% if lang == "fr" %} {% endif %}:</strong> {{ dmy }}
   {% if t_start and t_start != "" %} • <strong>{% if lang == "en" %}Time{% else %}Heure {% endif %}:</strong> {{ t_start }}{% if page.end %} – {{ t_end }}{% endif %}{% endif %}
   {% if page.location %} • <strong>{% if lang == "en" %}Location{% else %}Lieu {% endif %}:</strong> {{ page.location }}{% endif %}
   {% if page.language %} • <strong>{% if lang == "en" %}Language{% else %}Langue {% endif %}:</strong> {{ page.language }}{% endif %}
