@@ -14,9 +14,9 @@ layout: default
     {% endif %}
 {%- else -%}
     {% capture dmy %}{{ page.date | date: "%B %-d %Y" }}{% endcapture %}
-    {% capture t_start %}{{ page.date | date: "%h:%mm %tt" }}{% endcapture %}
+    {% capture t_start %}{{ page.date | date: "%-I:%M %p" }}{% endcapture %}
     {% if page.end %}
-        {% capture t_end %}{{ page.end | date: "%h:%mm %tt" }}{% endcapture %}
+        {% capture t_end %}{{ page.end | date: "%-I:%M %p" }}{% endcapture %}
     {% endif %}
 {%- endif -%}
 
