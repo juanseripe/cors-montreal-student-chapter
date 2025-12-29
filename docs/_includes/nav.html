@@ -1,5 +1,10 @@
 <nav class="main-nav">
-  {% assign is_en = page.url contains '/en/' %}
+  {% assign is_en = false %}
+  {% if page.url == '/en/' %}
+    {% assign is_en = true %}
+  {% elsif page.url | slice: 0, 4 == '/en/' %}
+    {% assign is_en = true %}
+  {% endif %}
   {% assign is_event = page.collection == 'events' %}
 
   {%- if is_en -%}
@@ -8,22 +13,25 @@
     {% assign prefix = site.baseurl %}
   {%- endif -%}
 
-  {%- comment -%}
-  Language switch:
-  - Normal pages: toggle by adding/removing '/en'
-  - Event detail pages: we do NOT have EN detail pages → send EN to the EN events list
-  {%- endcomment -%}
-
   {% if is_event %}
     {% assign fr_path = page.url %}
     {% assign en_path = '/en/evenements.html' %}
   {% else %}
     {% if is_en %}
-      {% assign fr_path = page.url | remove_first: '/en' %}
-      {% assign en_path = page.url %}
+      {% if page.url == '/en/' or page.url == '/en/index.html' %}
+        {% assign fr_path = '/' %}
+        {% assign en_path = '/en/' %}
+      {% else %}
+        {% assign fr_path = page.url | remove_first: '/en' %}
+        {% assign en_path = page.url %}
+      {% endif %}
     {% else %}
       {% assign fr_path = page.url %}
-      {% assign en_path = '/en' | append: page.url %}
+      {% if page.url == '/' %}
+        {% assign en_path = '/en/' %}
+      {% else %}
+        {% assign en_path = '/en' | append: page.url %}
+      {% endif %}
     {% endif %}
   {% endif %}
 
