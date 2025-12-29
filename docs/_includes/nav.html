@@ -1,5 +1,9 @@
 <nav class="main-nav">
-  {% assign is_en = page.url == '/en/' or page.url contains '/en/' %}
+  {% if page.url == '/en/' or page.url contains '/en/' %}
+    {% assign is_en = true %}
+  {% else %}
+    {% assign is_en = false %}
+  {% endif %}
   {% if is_en %}
     {% assign prefix = site.baseurl | append: '/en' %}
   {% else %}
