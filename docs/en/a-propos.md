@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-permalink: /en/
 ---
 
 # {{ page.title }}
@@ -17,7 +16,7 @@ permalink: /en/
 
 ---
 
-## Notre mission
+## Our mission
 
 Rassembler et soutenir la communauté étudiante en recherche opérationnelle à Montréal, en favorisant l’échange de connaissances, la collaboration interuniversitaire et le développement académique et professionnel.
 
@@ -27,7 +26,7 @@ Nous souhaitons créer un espace inclusif où les étudiantes et étudiants peuv
 
 ## Ce que nous faisons
 
-### Ateliers
+### Workshops
 Formations et démonstrations autour d’outils et de méthodes en recherche opérationnelle, avec un objectif de transfert pratique.
 
 ### Conférences et panels

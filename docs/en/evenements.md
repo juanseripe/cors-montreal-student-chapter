@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Events
-permalink: /en/
 ---
 
 # {{ page.title }}
