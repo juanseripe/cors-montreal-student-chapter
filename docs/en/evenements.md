@@ -13,7 +13,7 @@ We organize a monthly series of activities: technical workshops, talks/panels, a
 
 ## Upcoming
 
-{% assign upcoming_all = site.events | sort: "date" %}
+{% assign upcoming_all = site.events_en | sort: "date" %}
 {% assign upcoming = upcoming_all | where_exp: "e", "e.date >= site.time" %}
 
 {% if upcoming == empty %}
@@ -24,7 +24,7 @@ No upcoming events at the moment.
 
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ e.date | date: "%-d %B %Y" }} • {{ e.location }}</div>
+    <div class="event-item-meta">{{ e.date | date: "%B %-d %Y" }} • {{ e.location }}</div>
     <div class="event-item-links">
       <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a>
       {% if e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">Register</a>{% endif %}
@@ -38,7 +38,7 @@ No upcoming events at the moment.
 
 ## Archive
 
-{% assign past_all = site.events | sort: "date" | reverse %}
+{% assign past_all = site.events_en | sort: "date" | reverse %}
 {% assign past = past_all | where_exp: "e", "e.date < site.time" %}
 
 {% if past == empty %}
@@ -60,7 +60,7 @@ No archived events yet.
 
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ e.date | date: "%-d %B %Y" }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a></div>
+    <div class="event-item-meta">{{ e.date | date: "%B %-d %Y" }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a></div>
   </li>
 {% endfor %}
 </ul>

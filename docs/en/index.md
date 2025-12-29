@@ -27,7 +27,7 @@ We offer a monthly program (workshops, talks, panels, and networking events) des
   <a class="btn" href="{{ site.baseurl }}/en/evenements.html">View the full schedule</a>
 </div>
 
-{% assign upcoming = site.events | sort: "date" | where_exp: "e", "e.date >= site.time" %}
+{% assign upcoming = site.events_en | sort: "date" | where_exp: "e", "e.date >= site.time" %}
 {% assign next = upcoming.first %}
 
 {% if next %}
@@ -35,7 +35,7 @@ We offer a monthly program (workshops, talks, panels, and networking events) des
 
 **{{ next.title }}**  
 
-**Date:** {{ next.date | date: "%-d %B %Y" }} • **Location:** {{ next.location }} • **Language:** {{ next.language }}
+**Date:** {{ next.date | date: "%B %-d %Y" }} • **Location:** {{ next.location }} • **Language:** {{ next.language }}
 
 <div class="cta-row">
   <a class="btn primary" href="{{ next.rsvp }}">Register</a>

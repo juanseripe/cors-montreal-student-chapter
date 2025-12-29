@@ -1,5 +1,6 @@
 ---
 layout: event
+lang: fr
 title: Créer des tableaux de bord interactifs pour la visualisation des données en RO avec Dash
 date: 2025-12-02 16:00:00
 end: 2025-12-02 18:00:00
