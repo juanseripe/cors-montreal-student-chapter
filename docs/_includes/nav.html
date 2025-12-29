@@ -11,19 +11,15 @@
     {% assign prefix = site.baseurl %}
   {% endif %}
 
-  {% if page.collection == 'events' %}
-    {% assign fr_path = page.url %}
-    {% assign en_path = '/en/evenements.html' %}
+  {% if is_en %}
+    {% assign fr_path = page.url | remove_first: '/en' %}
+    {% assign en_path = page.url %}
   {% else %}
-    {% if is_en %}
-      {% assign fr_path = page.url | remove_first: '/en' %}
-      {% assign en_path = page.url %}
-    {% else %}
-      {% assign fr_path = page.url %}
-      {% assign en_path = '/en' | append: page.url %}
-    {% endif %}
+    {% assign fr_path = page.url %}
+    {% assign en_path = '/en' | append: page.url %}
   {% endif %}
-  
+
+
   <ul>
     <li><a href="{{ prefix }}/">{% if is_en %}Home{% else %}Accueil{% endif %}</a></li>
     <li><a href="{{ prefix }}/a-propos.html">{% if is_en %}About{% else %}À propos{% endif %}</a></li>
