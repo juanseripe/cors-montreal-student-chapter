@@ -8,14 +8,17 @@ layout: default
     {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
     {% assign m_index = page.date | date: "%-m" | minus: 1 %}
     {% capture dmy %}{{ page.date | date: "%-d" }} {{ months[m_index] }} {{ page.date | date: "%Y" }}{% endcapture %}
+    {% capture t_start %}{{ page.date | date: "%H h %M" }}{% endcapture %}
+    {% if page.end %}
+        {% capture t_end %}{{ page.end | date: "%H h %M" }}{% endcapture %}
+    {% endif %}
 {%- else -%}
     {% capture dmy %}{{ page.date | date: "%B %-d %Y" }}{% endcapture %}
+    {% capture t_start %}{{ page.date | date: "%h:%mm %tt" }}{% endcapture %}
+    {% if page.end %}
+        {% capture t_end %}{{ page.end | date: "%h:%mm %tt" }}{% endcapture %}
+    {% endif %}
 {%- endif -%}
-
-{% capture t_start %}{{ page.date | date: "%H:%M" }}{% endcapture %}
-{% if page.end %}
-  {% capture t_end %}{{ page.end | date: "%H:%M" }}{% endcapture %}
-{% endif %}
 
 {% if page.banner %}
 <div class="event-banner">
@@ -26,7 +29,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <div class="event-meta">
-  <strong>Date{% if lang == "fr" %} {% endif %}:</strong> {{ dmy }}
+  <strong>{% if lang == "en" %}Date{% else %}Date {% endif %}:</strong> {{ dmy }}
   {% if t_start and t_start != "" %} • <strong>{% if lang == "en" %}Time{% else %}Heure {% endif %}:</strong> {{ t_start }}{% if page.end %} – {{ t_end }}{% endif %}{% endif %}
   {% if page.location %} • <strong>{% if lang == "en" %}Location{% else %}Lieu {% endif %}:</strong> {{ page.location }}{% endif %}
   {% if page.language %} • <strong>{% if lang == "en" %}Language{% else %}Langue {% endif %}:</strong> {{ page.language }}{% endif %}
