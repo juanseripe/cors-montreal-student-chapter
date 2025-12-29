@@ -1,6 +1,7 @@
 ---
 layout: default
-title: À propos
+title: About
+permalink: /en/
 ---
 
 # {{ page.title }}

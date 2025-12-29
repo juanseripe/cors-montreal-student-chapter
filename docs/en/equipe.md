@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Équipe
+title: Team
+permalink: /en/
 ---
 
 # {{ page.title }}

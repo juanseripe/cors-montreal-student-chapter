@@ -1,8 +1,44 @@
 <nav class="main-nav">
+  {% assign is_en = page.url contains '/en/' %}
+  {% assign is_event = page.collection == 'events' %}
+
+  {%- if is_en -%}
+    {% assign prefix = site.baseurl | append: '/en' %}
+  {%- else -%}
+    {% assign prefix = site.baseurl %}
+  {%- endif -%}
+
+  {%- comment -%}
+  Language switch:
+  - Normal pages: toggle by adding/removing '/en'
+  - Event detail pages: we do NOT have EN detail pages → send EN to the EN events list
+  {%- endcomment -%}
+
+  {% if is_event %}
+    {% assign fr_path = page.url %}
+    {% assign en_path = '/en/evenements.html' %}
+  {% else %}
+    {% if is_en %}
+      {% assign fr_path = page.url | remove_first: '/en' %}
+      {% assign en_path = page.url %}
+    {% else %}
+      {% assign fr_path = page.url %}
+      {% assign en_path = '/en' | append: page.url %}
+    {% endif %}
+  {% endif %}
+
   <ul>
-    <li><a href="{{ site.baseurl }}/">Accueil</a></li>
-    <li><a href="{{ site.baseurl }}/a-propos.html">À propos</a></li>
-    <li><a href="{{ site.baseurl }}/evenements.html">Événements</a></li>
-    <li><a href="{{ site.baseurl }}/equipe.html">Équipe</a></li>
+    <li><a href="{{ prefix }}/">{% if is_en %}Home{% else %}Accueil{% endif %}</a></li>
+    <li><a href="{{ prefix }}/a-propos.html">{% if is_en %}About{% else %}À propos{% endif %}</a></li>
+    <li><a href="{{ prefix }}/evenements.html">{% if is_en %}Events{% else %}Événements{% endif %}</a></li>
+    <li><a href="{{ prefix }}/equipe.html">{% if is_en %}Team{% else %}Équipe{% endif %}</a></li>
+
+    <li class="nav-spacer"></li>
+
+    <li class="nav-lang">
+      <a class="{% unless is_en %}active{% endunless %}" href="{{ fr_path | relative_url }}">FR</a>
+      <span class="nav-sep">|</span>
+      <a class="{% if is_en %}active{% endif %}" href="{{ en_path | relative_url }}">EN</a>
+    </li>
   </ul>
 </nav>
