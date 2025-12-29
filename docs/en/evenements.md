@@ -7,30 +7,27 @@ title: Events
 
 ---
 
-Nous organisons une série mensuelle d’activités : ateliers techniques, conférences/panels et événements de réseautage.
+We organize a monthly series of activities: technical workshops, talks/panels, and networking events.
 
 ---
 
-## À venir
+## Upcoming
 
 {% assign upcoming_all = site.events | sort: "date" %}
 {% assign upcoming = upcoming_all | where_exp: "e", "e.date >= site.time" %}
 
 {% if upcoming == empty %}
-Aucun événement à venir pour le moment.
+No upcoming events at the moment.
 {% else %}
 <ul class="event-list">
 {% for e in upcoming %}
-  {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
-  {% assign m_index = e.date | date: "%-m" | minus: 1 %}
-  {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
 
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ dmy }} • {{ e.location }}</div>
+    <div class="event-item-meta">{{ e.date | date: "%-d %B %Y" }} • {{ e.location }}</div>
     <div class="event-item-links">
-      <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a>
-      {% if e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">S’inscrire</a>{% endif %}
+      <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a>
+      {% if e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">Register</a>{% endif %}
     </div>
   </li>
 {% endfor %}
@@ -39,13 +36,13 @@ Aucun événement à venir pour le moment.
 
 ---
 
-## Archives
+## Archive
 
 {% assign past_all = site.events | sort: "date" | reverse %}
 {% assign past = past_all | where_exp: "e", "e.date < site.time" %}
 
 {% if past == empty %}
-Aucun événement archivé pour le moment.
+No archived events yet.
 {% else %}
 {% assign current_year = "" %}
 
@@ -61,13 +58,9 @@ Aucun événement archivé pour le moment.
 <ul class="event-list">
   {% endif %}
 
-  {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
-  {% assign m_index = e.date | date: "%-m" | minus: 1 %}
-  {% capture dmy %}{{ e.date | date: "%-d" }} {{ months[m_index] }} {{ e.date | date: "%Y" }}{% endcapture %}
-
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ dmy }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a></div>
+    <div class="event-item-meta">{{ e.date | date: "%-d %B %Y" }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a></div>
   </li>
 {% endfor %}
 </ul>
@@ -75,11 +68,11 @@ Aucun événement archivé pour le moment.
 
 ---
 
-## Proposer une idée
+## Suggest an Idea
 
-Vous souhaitez proposer un atelier, un·e invité·e, ou un format ? Écrivez-nous :
+Would you like to propose a workshop, invite a speaker, or suggest a format? Reach out to us:
 <div class="cta-row">
-  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Formulaire</a>
+  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Form</a>
   <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a>
-  <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Courriel</a>
+  <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Email</a>
 </div>

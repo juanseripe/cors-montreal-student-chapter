@@ -10,7 +10,7 @@ title: About
 <div class="about-intro">
   <img class="about-logo" src="{{ site.baseurl }}/assets/img/cors-logo.png" alt="Logo de la SCRO">
   <p>
-    Le chapitre étudiant montréalais de la <a href="https://www.cors.ca/fr/node/6">SCRO</a> rassemble les étudiantes et étudiants aux cycles supérieurs en recherche opérationnelle et en sciences de la décision à Montréal. Nous développons une communauté interuniversitaire axée sur le partage, l’apprentissage et les collaborations.
+    The <a href="https://www.cors.ca/content/about-cors">CORS</a> Montreal Student Chapter brings together graduate students in operations research and decision sciences across Montreal. We build an inter-university community focused on knowledge sharing, learning, and collaboration.
   </p>
 </div>
 
@@ -18,35 +18,36 @@ title: About
 
 ## Our mission
 
-Rassembler et soutenir la communauté étudiante en recherche opérationnelle à Montréal, en favorisant l’échange de connaissances, la collaboration interuniversitaire et le développement académique et professionnel.
+Bring together and support the student operations research community in Montreal by fostering knowledge exchange, inter-university collaboration, and academic and professional development.
 
-Nous souhaitons créer un espace inclusif où les étudiantes et étudiants peuvent apprendre, partager, et établir des liens avec le milieu universitaire, les centres de recherche et le monde industriel.
+We aim to create an inclusive space where students can learn, connect, and engage with academia, research centers, and industry.
 
 ---
 
-## Ce que nous faisons
+## What We Do
 
 ### Workshops
-Formations et démonstrations autour d’outils et de méthodes en recherche opérationnelle, avec un objectif de transfert pratique.
+Hands-on training sessions and demonstrations focused on operations research tools and methods, with an emphasis on practical applications.
 
-### Conférences et panels
-Présentations de travaux de recherche et discussions sur des thèmes liés à la discipline, aux parcours académiques et à la transition vers l’industrie.
+### Talks and Panels
+Research presentations and discussions on topics related to the discipline, academic pathways, and transitions to industry.
 
-### Réseautage
-Rencontres conviviales pour connecter les étudiant·e·s entre campus, favoriser l’entraide et stimuler les échanges.
+### Networking
+
+Informal gatherings that connect students across campuses, encourage peer support, and foster meaningful exchanges.
 
 ---
 
-## Ancrage et collaboration
+## Anchoring and Collaboration
 
-Nous agissons en proximité avec l’écosystème montréalais en recherche opérationnelle et sciences de la décision :
+We actively engage with Montreal’s operations research and decision sciences ecosystem, including:
 
-[Université de Montréal](https://www.umontreal.ca/) •
-[Polytechnique Montréal](https://www.polymtl.ca/) •
-[HEC Montréal](https://www.hec.ca/) •
+[Université de Montréal](https://www.umontreal.ca/en/) •
+[Polytechnique Montréal](https://www.polymtl.ca/en/) •
+[HEC Montréal](https://www.hec.ca/en) •
 [Concordia University](https://www.concordia.ca/) •
-[UQAM](https://uqam.ca/) •
-[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/) •
+[UQAM](https://uqam.ca/en/information/about/) •
+[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/en/) •
 [McGill University](https://www.mcgill.ca/) •
-[GERAD](https://www.gerad.ca/fr) •
-[CIRRELT](https://www.cirrelt.ca/)
+[GERAD](https://www.gerad.ca/en) •
+[CIRRELT](https://www.cirrelt.ca/default.aspx)

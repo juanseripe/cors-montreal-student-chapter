@@ -21,36 +21,36 @@ Through talks, workshops, and networking events, we contribute to the disseminat
 
 ## Monthly series
 
-Nous proposons une programmation mensuelle (ateliers, conférences, panels, réseautage) conçue pour être accessible et utile tout au long de l’année universitaire.
+We offer a monthly program (workshops, talks, panels, and networking events) designed to be accessible and valuable throughout the academic year.
 
 <div class="cta-row">
-  <a class="btn" href="{{ site.baseurl }}/evenements.html">Voir la programmation complète</a>
+  <a class="btn" href="{{ site.baseurl }}/en/evenements.html">View the full schedule</a>
 </div>
 
 {% assign upcoming = site.events | sort: "date" | where_exp: "e", "e.date >= site.time" %}
 {% assign next = upcoming.first %}
 
 {% if next %}
-### Prochain événement
+### Upcoming Event
 
 **{{ next.title }}**  
 
-**Date :** {{ next.date | date: "%-d %B %Y" }} • **Lieu :** {{ next.location }} • **Langue :** {{ next.language }}
+**Date:** {{ next.date | date: "%-d %B %Y" }} • **Location:** {{ next.location }} • **Language:** {{ next.language }}
 
 <div class="cta-row">
-  <a class="btn primary" href="{{ next.rsvp }}">S’inscrire</a>
-  <a class="btn" href="{{ next.url | relative_url }}">Détails</a>
+  <a class="btn primary" href="{{ next.rsvp }}">Register</a>
+  <a class="btn" href="{{ next.url | relative_url }}">Details</a>
 </div>
 {% endif %}
 
 ---
 
-## Contact us
+## Contact Us
 
-Pour toute question, proposition d’atelier ou idée d’événement, écrivez-nous :
+For any questions, workshop proposals, or event ideas, feel free to reach out:
 
 <div class="cta-row">
-  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Formulaire</a>
+  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Form</a>
   <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a>
-  <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Courriel</a>
+  <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Email</a>
 </div>
