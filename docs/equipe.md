@@ -20,7 +20,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Camille Pinçon</strong></div>
     <div class="team-meta"><strong>Présidente</strong> • Polytechnique Montréal</div>
-    <div class="team-email"><a href="mailto:camille.pincon@etud.polymtl.ca">[camille.pincon@etud.polymtl.ca]</a></div>
+    <div class="team-email"><a href="mailto:camille.pincon@etud.polymtl.ca">[camille.pincon<wbr>@etud.polymtl.ca]</a></div>
   </div>
 </div>
 
@@ -29,7 +29,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Max Bourgeat</strong></div>
     <div class="team-meta"><strong>Vice-président</strong> • Polytechnique Montréal</div>
-    <div class="team-email"><a href="mailto:max.bourgeat@etud.polymtl.ca">[max.bourgeat@etud.polymtl.ca]</a></div>
+    <div class="team-email"><a href="mailto:max.bourgeat@etud.polymtl.ca">[max.bourgeat<wbr>@etud.polymtl.ca]</a></div>
   </div>
 </div>
 
@@ -38,7 +38,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Benedikt Kern</strong></div>
     <div class="team-meta"><strong>Trésorier</strong> • Concordia University</div>
-    <div class="team-email"><a href="mailto:benedikt.kern@mail.concordia.ca">[benedikt.kern@mail.concordia.ca]</a></div>
+    <div class="team-email"><a href="mailto:benedikt.kern@mail.concordia.ca">[benedikt.kern<wbr>@mail.concordia.ca]</a></div>
   </div>
 </div>
 
@@ -47,7 +47,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Bruno Machado Pacheco</strong></div>
     <div class="team-meta"><strong>Secrétaire</strong> • Université de Montréal</div>
-    <div class="team-email"><a href="mailto:bruno.machado.pacheco@umontreal.ca">[bruno.machado.<wbr>pacheco@umontreal.ca]</a></div>
+    <div class="team-email"><a href="mailto:bruno.machado.pacheco@umontreal.ca">[bruno.machado.<wbr>pacheco<wbr>@umontreal.ca]</a></div>
   </div>
 </div>
 
@@ -56,7 +56,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Juan Sebastian Riveros Perez</strong></div>
     <div class="team-meta"><strong>Vice-président aux communications</strong> • HEC Montréal</div>
-    <div class="team-email"><a href="mailto:juan-sebastian.riveros-perez@hec.ca">[juan-sebastian.riveros-perez@hec.ca]</a></div>
+    <div class="team-email"><a href="mailto:juan-sebastian.riveros-perez@hec.ca">[juan-sebastian.riveros-perez<wbr>@hec.ca]</a></div>
   </div>
 </div>
 
@@ -65,7 +65,7 @@ Le chapitre est piloté par des étudiant·e·s. Le comité exécutif coordonne 
   <div>
     <div class="team-name"><strong>Flore Caye</strong></div>
     <div class="team-meta"><strong>Vice-présidente à l’événementiel</strong> • Polytechnique Montréal</div>
-    <div class="team-email"><a href="mailto:flore.caye@polymtl.ca">[flore.caye@polymtl.ca]</a></div>
+    <div class="team-email"><a href="mailto:flore.caye@polymtl.ca">[flore.caye<wbr>@polymtl.ca]</a></div>
   </div>
 </div>
 
