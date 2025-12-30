@@ -42,3 +42,8 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+<p>
+  <a class="event-details-link" href="{% if lang == 'en' %}{{ '/en/evenements.html' | relative_url }}{% else %}{{ '/evenements.html' | relative_url }}{% endif %}">{% if lang == "en" %}Back to events{% else %}Retour aux événements{% endif %}
+  </a>
+</p>
