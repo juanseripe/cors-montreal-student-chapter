@@ -35,15 +35,25 @@ layout: default
   {% if page.language %} • <strong>{% if lang == "en" %}Language{% else %}Langue {% endif %}:</strong> {{ page.language }}{% endif %}
 </div>
 
-{% assign coll = site[page.collection] %}
-{% assign upcoming = coll | where_exp: "e", "e.date >= site.time" | sort: "date" %}
-{% assign next = upcoming.first %}
-{% assign is_next = next and next.url == page.url %}
+{% assign now_unix = "now" | date: "%s" | plus: 0 %}
 
-{% if is_next and page.rsvp %}
-<div class="cta-row">
-  <a class="btn primary" href="{{ page.rsvp }}">{% if lang == "en" %}Register{% else %}S’inscrire{% endif %}</a>
-</div>
+{% assign events = site[page.collection] | sort: "date" %}
+{% assign next_event = nil %}
+
+{% for event in events %}
+  {% assign event_unix = event.date | date: "%s" | plus: 0 %}
+  {% if event_unix >= now_unix %}
+    {% assign next_event = event %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if next_event and next_event.url == page.url and page.rsvp %}
+  <div class="cta-row">
+    <a class="btn primary" href="{{ page.rsvp }}">
+      {% if lang == "en" %}Register{% else %}S’inscrire{% endif %}
+    </a>
+  </div>
 {% endif %}
 
 {{ content }}
