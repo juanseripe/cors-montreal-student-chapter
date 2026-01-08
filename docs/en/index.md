@@ -38,7 +38,7 @@ We offer a monthly program (workshops, talks, panels, and networking events) des
 **Date:** {{ next.date | date: "%B %-d %Y" }} • **Location:** {{ next.location }} • **Language:** {{ next.language }}
 
 <div class="cta-row">
-  <a class="btn primary" href="{{ next.rsvp }}">Register</a>
+  <a class="btn primary" href="{{ next.rsvp }}">Register</a> • 
   <a class="btn" href="{{ next.url | relative_url }}">Details</a>
 </div>
 {% endif %}

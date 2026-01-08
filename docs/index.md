@@ -39,7 +39,7 @@ Nous proposons une programmation mensuelle (ateliers, conférences, panels, rés
 **Date :** {{ dmy }} • **Lieu :** {{ next.location }} • **Langue :** {{ next.language }}
 
 <div class="cta-row">
-  <a class="btn primary" href="{{ next.rsvp }}">S’inscrire</a>
+  <a class="btn primary" href="{{ next.rsvp }}">S’inscrire</a> • 
   <a class="btn" href="{{ next.url | relative_url }}">Détails</a>
 </div>
 {% endif %}
