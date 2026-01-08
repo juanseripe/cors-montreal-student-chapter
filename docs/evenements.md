@@ -30,7 +30,7 @@ Aucun événement à venir pour le moment.
     <div class="event-item-meta">{{ dmy }} • {{ e.location }}</div>
     <div class="event-item-links">
       <a class="event-details-link" href="{{ e.url | relative_url }}">Détails</a>
-      {% if if forloop.first and e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">S’inscrire</a>{% endif %}
+      {% if forloop.first and e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">S’inscrire</a>{% endif %}
     </div>
   </li>
 {% endfor %}

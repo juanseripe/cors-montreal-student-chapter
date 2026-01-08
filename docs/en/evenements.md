@@ -27,7 +27,7 @@ No upcoming events at the moment.
     <div class="event-item-meta">{{ e.date | date: "%B %-d %Y" }} • {{ e.location }}</div>
     <div class="event-item-links">
       <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a>
-      {% if if forloop.first and e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">Register</a>{% endif %}
+      {% if forloop.first and e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">Register</a>{% endif %}
     </div>
   </li>
 {% endfor %}
