@@ -1,7 +1,7 @@
 ---
 layout: event
 lang: fr
-title: Tracer sa voie en recherche opérationnelle – études, carrière et au-delà
+title: "Tracer sa voie en recherche opérationnelle : études, carrière et au-delà"
 date: 2025-11-06 15:30:00
 end: 2025-11-06 17:30:00
 location: CIRRELT/GERAD

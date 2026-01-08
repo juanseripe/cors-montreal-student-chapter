@@ -1,7 +1,7 @@
 ---
 layout: event
 lang: fr
-title: TBA
+title: "Optimisation robuste et stochastique : prise de décision sous incertitude"
 date: 2026-01-29 13:00:00
 end: 2026-01-29 16:00:00
 location: Concordia University
@@ -12,4 +12,4 @@ rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
 
 ## Description
 
-Pending
+À venir
