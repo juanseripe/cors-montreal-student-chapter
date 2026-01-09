@@ -50,7 +50,7 @@ We offer a monthly program (workshops, talks, panels, and networking events) des
 For any questions, workshop proposals, or event ideas, feel free to reach out:
 
 <div class="cta-row">
-  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Form</a>
-  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a>
+  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Form</a> • 
+  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a> • 
   <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Email</a>
 </div>

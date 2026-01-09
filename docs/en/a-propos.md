@@ -42,12 +42,12 @@ Informal gatherings that connect students across campuses, encourage peer suppor
 
 We actively engage with Montreal’s operations research and decision sciences ecosystem, including:
 
-[Université de Montréal](https://www.umontreal.ca/en/) •
-[Polytechnique Montréal](https://www.polymtl.ca/en/) •
-[HEC Montréal](https://www.hec.ca/en) •
-[Concordia University](https://www.concordia.ca/) •
-[UQAM](https://uqam.ca/en/information/about/) •
-[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/en/) •
-[McGill University](https://www.mcgill.ca/) •
-[GERAD](https://www.gerad.ca/en) •
+[Université de Montréal](https://www.umontreal.ca/en/) • 
+[Polytechnique Montréal](https://www.polymtl.ca/en/) • 
+[HEC Montréal](https://www.hec.ca/en) • 
+[Concordia University](https://www.concordia.ca/) • 
+[UQAM](https://uqam.ca/en/information/about/) • 
+[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/en/) • 
+[McGill University](https://www.mcgill.ca/) • 
+[GERAD](https://www.gerad.ca/en) • 
 [CIRRELT](https://www.cirrelt.ca/default.aspx)

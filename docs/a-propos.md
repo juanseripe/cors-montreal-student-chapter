@@ -41,12 +41,12 @@ Rencontres conviviales pour connecter les étudiant·e·s entre campus, favorise
 
 Nous agissons en proximité avec l’écosystème montréalais en recherche opérationnelle et sciences de la décision :
 
-[Université de Montréal](https://www.umontreal.ca/) •
-[Polytechnique Montréal](https://www.polymtl.ca/) •
-[HEC Montréal](https://www.hec.ca/) •
-[Concordia University](https://www.concordia.ca/fr.html) •
-[UQAM](https://uqam.ca/) •
-[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/) •
-[McGill University](https://www.mcgill.ca/fr) •
-[GERAD](https://www.gerad.ca/fr) •
+[Université de Montréal](https://www.umontreal.ca/) • 
+[Polytechnique Montréal](https://www.polymtl.ca/) • 
+[HEC Montréal](https://www.hec.ca/) • 
+[Concordia University](https://www.concordia.ca/fr.html) • 
+[UQAM](https://uqam.ca/) • 
+[École de technologie supérieure (ÉTS)](https://www.etsmtl.ca/) • 
+[McGill University](https://www.mcgill.ca/fr) • 
+[GERAD](https://www.gerad.ca/fr) • 
 [CIRRELT](https://www.cirrelt.ca/)

@@ -72,7 +72,7 @@ No archived events yet.
 
 Would you like to propose a workshop, invite a speaker, or suggest a format? Reach out to us:
 <div class="cta-row">
-  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Form</a>
-  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a>
+  <a class="btn primary" href="https://forms.gle/HKsmGnPezVEidjKTA">Form</a> • 
+  <a class="btn" href="https://www.linkedin.com/company/cors-montreal-student-chapter">LinkedIn</a> • 
   <a class="btn" href="mailto:juan-sebastian.riveros-perez@hec.ca">Email</a>
 </div>
