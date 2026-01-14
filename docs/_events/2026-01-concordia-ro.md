@@ -12,4 +12,4 @@ rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
 
 ## Description
 
-À venir
+Cet événement propose une introduction aux cadres de l’optimisation robuste et de l’optimisation stochastique, deux approches complémentaires permettant de concevoir des décisions fiables face à des données incertaines. À travers des exemples et applications, nous mettrons en lumière leurs principes clés, leurs différences et les contextes dans lesquels chacune est la plus appropriée.

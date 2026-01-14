@@ -12,4 +12,4 @@ rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
 
 ## Description
 
-Pending
+This event introduces robust and stochastic optimization, two complementary frameworks for designing reliable decisions under uncertainty. Through examples and applications, we will highlight their key principles, main differences, and the contexts in which each approach is most relevant.
