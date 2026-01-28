@@ -37,7 +37,7 @@ layout: default
 
 {% assign now_unix = "now" | date: "%s" | plus: 0 %}
 
-{% assign events = site[page.collection] | sort: "date" %}
+<!-- {% assign events = site[page.collection] | sort: "date" %}
 {% assign next_event = nil %}
 
 {% for event in events %}
@@ -48,7 +48,9 @@ layout: default
   {% endif %}
 {% endfor %}
 
-{% if next_event and next_event.url == page.url and page.rsvp %}
+{% if next_event and next_event.url == page.url and page.rsvp %} -->
+{% assign event_unix = page.date | date: "%s" | plus: 0 %}
+{% if page.rsvp and event_unix >= now_unix %}
   <div class="cta-row">
     <a class="btn primary" href="{{ page.rsvp }}">
       {% if lang == "en" %}Register{% else %}S’inscrire{% endif %}

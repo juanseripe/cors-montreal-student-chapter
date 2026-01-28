@@ -6,10 +6,14 @@ date: 2026-02-05 15:00:00
 end: 2026-02-05 18:00:00
 location: TBA
 language: anglais
-rsvp: https://forms.gle/yotLNNLuEaB2H8eC8
-# banner: /assets/img/events/2026-01-concordia-ro.png
+rsvp: https://forms.gle/WRGTLJ7wJm75Boy96
+banner: /assets/img/events/2026-02-ivadolabs.png
 ---
 
 ## Description
 
-À venir
+Le chapitre étudiant montréalais de la SCRO vous invite à un panel industriel avec IVADO Labs, une équipe en intelligence artificielle et analytique appliquées qui accompagne des organisations au Canada et à l’international dans la résolution de problèmes complexes de prise de décision à l’aide de la recherche opérationnelle et de l’apprentissage automatique.
+
+Cet événement s’adresse aux étudiant·e·s et aux jeunes chercheur·e·s curieux·ses de ce qui se passe après l’article scientifique : comment une idée en recherche opérationnelle devient un produit concret ou un processus décisionnel en entreprise. La discussion abordera la manière dont les projets de consultation sont structurés, ce que signifie concrètement « RO + ML » en pratique, ainsi que les types d’applications sur lesquelles les équipes travaillent (planification, ordonnancement, routage, allocation de ressources, et plus encore). Nous discuterons également ouvertement des parcours professionnels et de la transition du milieu académique vers l’industrie, des compétences clés à développer, des collaborations industrie–université et de la réalité du travail au quotidien. La séance se conclura par une période de questions avec le public.
+
+Les panélistes d’IVADO Labs incluent une vice-présidente en science des données, un directeur principal en gestion de la livraison et deux scientifiques des données principaux.
