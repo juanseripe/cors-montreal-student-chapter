@@ -3,7 +3,7 @@ layout: event
 lang: fr
 title: "De l’idée à l’application : la recherche opérationnelle en pratique – panel industriel avec IVADO Labs"
 date: 2026-02-05 15:00:00
-end: 2026-02-05 18:00:00
+end: 2026-02-05 17:00:00
 location: Université de Montréal
 language: anglais
 rsvp: https://forms.gle/WRGTLJ7wJm75Boy96
