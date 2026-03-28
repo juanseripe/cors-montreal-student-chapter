@@ -21,10 +21,29 @@ No upcoming events at the moment.
 {% else %}
 <ul class="event-list">
 {% for e in upcoming %}
+  {% assign start_day = e.date | date: "%-d" %}
+  {% assign start_month = e.date | date: "%B" %}
+  {% assign start_year = e.date | date: "%Y" %}
+  {% if e.end %}
+    {% assign end_day = e.end | date: "%-d" %}
+    {% assign end_month = e.end | date: "%B" %}
+    {% assign end_year = e.end | date: "%Y" %}
+    {% if start_month == end_month %}
+      {% if start_day == end_day %}
+        {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+      {% else %}
+        {% capture dmy %}{{ start_month }} {{ start_day }}-{{ end_day }} {{ start_year }}{% endcapture %}
+      {% endif %}
+    {% else %}
+      {% capture dmy %}{{ start_month }} {{ start_day }} - {{ end_month }} {{ end_day }} {{ end_year }}{% endcapture %}
+    {% endif %}
+  {% else %}
+    {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+  {% endif %}
 
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ e.date | date: "%B %-d %Y" }} • {{ e.location }}</div>
+    <div class="event-item-meta">{{ dmy }} • {{ e.location }}</div>
     <div class="event-item-links">
       <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a>
       {% if e.rsvp %} • <a class="event-details-link" href="{{ e.rsvp }}">Register</a>{% endif %}
@@ -58,9 +77,29 @@ No archived events yet.
 <ul class="event-list">
   {% endif %}
 
+  {% assign start_day = e.date | date: "%-d" %}
+  {% assign start_month = e.date | date: "%B" %}
+  {% assign start_year = e.date | date: "%Y" %}
+  {% if e.end %}
+    {% assign end_day = e.end | date: "%-d" %}
+    {% assign end_month = e.end | date: "%B" %}
+    {% assign end_year = e.end | date: "%Y" %}
+    {% if start_month == end_month %}
+      {% if start_day == end_day %}
+        {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+      {% else %}
+        {% capture dmy %}{{ start_month }} {{ start_day }}-{{ end_day }} {{ start_year }}{% endcapture %}
+      {% endif %}
+    {% else %}
+      {% capture dmy %}{{ start_month }} {{ start_day }} - {{ end_month }} {{ end_day }} {{ end_year }}{% endcapture %}
+    {% endif %}
+  {% else %}
+    {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+  {% endif %}
+
   <li class="event-item">
     <div class="event-item-title"><strong>{{ e.title }}</strong></div>
-    <div class="event-item-meta">{{ e.date | date: "%B %-d %Y" }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a></div>
+    <div class="event-item-meta">{{ dmy }} • {{ e.location }} •  <a class="event-details-link" href="{{ e.url | relative_url }}">Details</a></div>
   </li>
 {% endfor %}
 </ul>

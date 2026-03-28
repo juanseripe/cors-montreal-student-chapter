@@ -7,16 +7,57 @@ layout: default
 {%- if lang == "fr" -%}
     {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
     {% assign m_index = page.date | date: "%-m" | minus: 1 %}
-    {% capture dmy %}{{ page.date | date: "%-d" }} {{ months[m_index] }} {{ page.date | date: "%Y" }}{% endcapture %}
-    {% capture t_start %}{{ page.date | date: "%H h %M" }}{% endcapture %}
+    {% assign start_day = page.date | date: "%-d" %}
+    {% assign start_month = months[m_index] %}
+    {% assign start_year = page.date | date: "%Y" %}
     {% if page.end %}
-        {% capture t_end %}{{ page.end | date: "%H h %M" }}{% endcapture %}
+        {% assign end_day = page.end | date: "%-d" %}
+        {% assign end_m_index = page.end | date: "%-m" | minus: 1 %}
+        {% assign end_month = months[end_m_index] %}
+        {% assign end_year = page.end | date: "%Y" %}
+        {% assign multiday = false %}
+        {% if start_day != end_day %}{% assign multiday = true %}{% endif %}
+        {% if start_month != end_month %}{% assign multiday = true %}{% endif %}
+        {% if multiday %}
+            {% if start_month == end_month %}
+                {% capture dmy %}{{ start_day }}-{{ end_day }} {{ start_month }} {{ start_year }}{% endcapture %}
+            {% else %}
+                {% capture dmy %}{{ start_day }} {{ start_month }} - {{ end_day }} {{ end_month }} {{ end_year }}{% endcapture %}
+            {% endif %}
+        {% else %}
+            {% capture dmy %}{{ start_day }} {{ start_month }} {{ start_year }}{% endcapture %}
+            {% capture t_start %}{{ page.date | date: "%H h %M" }}{% endcapture %}
+            {% capture t_end %}{{ page.end | date: "%H h %M" }}{% endcapture %}
+        {% endif %}
+    {% else %}
+        {% capture dmy %}{{ start_day }} {{ start_month }} {{ start_year }}{% endcapture %}
+        {% capture t_start %}{{ page.date | date: "%H h %M" }}{% endcapture %}
     {% endif %}
 {%- else -%}
-    {% capture dmy %}{{ page.date | date: "%B %-d %Y" }}{% endcapture %}
-    {% capture t_start %}{{ page.date | date: "%-I:%M %p" }}{% endcapture %}
+    {% assign start_day = page.date | date: "%-d" %}
+    {% assign start_month = page.date | date: "%B" %}
+    {% assign start_year = page.date | date: "%Y" %}
     {% if page.end %}
-        {% capture t_end %}{{ page.end | date: "%-I:%M %p" }}{% endcapture %}
+        {% assign end_day = page.end | date: "%-d" %}
+        {% assign end_month = page.end | date: "%B" %}
+        {% assign end_year = page.end | date: "%Y" %}
+        {% assign multiday = false %}
+        {% if start_day != end_day %}{% assign multiday = true %}{% endif %}
+        {% if start_month != end_month %}{% assign multiday = true %}{% endif %}
+        {% if multiday %}
+            {% if start_month == end_month %}
+                {% capture dmy %}{{ start_month }} {{ start_day }}-{{ end_day }} {{ start_year }}{% endcapture %}
+            {% else %}
+                {% capture dmy %}{{ start_month }} {{ start_day }} - {{ end_month }} {{ end_day }} {{ end_year }}{% endcapture %}
+            {% endif %}
+        {% else %}
+            {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+            {% capture t_start %}{{ page.date | date: "%-I:%M %p" }}{% endcapture %}
+            {% capture t_end %}{{ page.end | date: "%-I:%M %p" }}{% endcapture %}
+        {% endif %}
+    {% else %}
+        {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+        {% capture t_start %}{{ page.date | date: "%-I:%M %p" }}{% endcapture %}
     {% endif %}
 {%- endif -%}
 

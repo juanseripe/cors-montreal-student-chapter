@@ -35,7 +35,26 @@ We offer a monthly program (workshops, talks, panels, and networking events) des
 
 **{{ next.title }}**  
 
-**Date:** {{ next.date | date: "%B %-d %Y" }} • **Location:** {{ next.location }} • **Language:** {{ next.language }}
+{% assign start_day = next.date | date: "%-d" %}
+{% assign start_month = next.date | date: "%B" %}
+{% assign start_year = next.date | date: "%Y" %}
+{% if next.end %}
+  {% assign end_day = next.end | date: "%-d" %}
+  {% assign end_month = next.end | date: "%B" %}
+  {% assign end_year = next.end | date: "%Y" %}
+  {% if start_month == end_month %}
+    {% if start_day == end_day %}
+      {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+    {% else %}
+      {% capture dmy %}{{ start_month }} {{ start_day }}-{{ end_day }} {{ start_year }}{% endcapture %}
+    {% endif %}
+  {% else %}
+    {% capture dmy %}{{ start_month }} {{ start_day }} - {{ end_month }} {{ end_day }} {{ end_year }}{% endcapture %}
+  {% endif %}
+{% else %}
+  {% capture dmy %}{{ start_month }} {{ start_day }} {{ start_year }}{% endcapture %}
+{% endif %}
+**Date:** {{ dmy }} • **Location:** {{ next.location }} • **Language:** {{ next.language }}
 
 <div class="cta-row">
   <a class="btn primary" href="{{ next.rsvp }}">Register</a> • 

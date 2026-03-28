@@ -35,7 +35,26 @@ Nous proposons une programmation mensuelle (ateliers, conférences, panels, rés
 **{{ next.title }}**  
 {% assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," %}
 {% assign m_index = next.date | date: "%-m" | minus: 1 %}
-{% capture dmy %}{{ next.date | date: "%-d" }} {{ months[m_index] }} {{ next.date | date: "%Y" }}{% endcapture %}
+{% assign start_day = next.date | date: "%-d" %}
+{% assign start_month = months[m_index] %}
+{% assign start_year = next.date | date: "%Y" %}
+{% if next.end %}
+  {% assign end_day = next.end | date: "%-d" %}
+  {% assign end_m_index = next.end | date: "%-m" | minus: 1 %}
+  {% assign end_month = months[end_m_index] %}
+  {% if start_month == end_month %}
+    {% if start_day == end_day %}
+      {% capture dmy %}{{ start_day }} {{ start_month }} {{ start_year }}{% endcapture %}
+    {% else %}
+      {% capture dmy %}{{ start_day }}-{{ end_day }} {{ start_month }} {{ start_year }}{% endcapture %}
+    {% endif %}
+  {% else %}
+    {% assign end_year = next.end | date: "%Y" %}
+    {% capture dmy %}{{ start_day }} {{ start_month }} - {{ end_day }} {{ end_month }} {{ end_year }}{% endcapture %}
+  {% endif %}
+{% else %}
+  {% capture dmy %}{{ start_day }} {{ start_month }} {{ start_year }}{% endcapture %}
+{% endif %}
 **Date :** {{ dmy }} • **Lieu :** {{ next.location }} • **Langue :** {{ next.language }}
 
 <div class="cta-row">
