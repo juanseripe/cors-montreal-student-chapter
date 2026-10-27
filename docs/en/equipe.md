@@ -25,11 +25,11 @@ The chapter is led by students. The executive committee coordinates programming,
 </div>
 
 <div class="team-card">
-  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/max-bourgeat.jpg" alt="Max Bourgeat">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/juan-sebastian-riveros-perez.jpg" alt="Juan Sebastian Riveros Perez">
   <div>
-    <div class="team-name"><strong>Max Bourgeat</strong></div>
-    <div class="team-meta"><strong>Vice President</strong> • Polytechnique Montréal</div>
-    <div class="team-email"><a href="mailto:max.bourgeat@etud.polymtl.ca">[max.bourgeat<wbr>@etud.polymtl.ca]</a></div>
+    <div class="team-name"><strong>Juan Sebastian Riveros Perez</strong></div>
+    <div class="team-meta"><strong>Vice President</strong> • HEC Montréal</div>
+    <div class="team-email"><a href="mailto:juan-sebastian.riveros-perez@hec.ca">[juan-sebastian.riveros-perez<wbr>@hec.ca]</a></div>
   </div>
 </div>
 
@@ -52,20 +52,11 @@ The chapter is led by students. The executive committee coordinates programming,
 </div>
 
 <div class="team-card">
-  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/juan-sebastian-riveros-perez.jpg" alt="Juan Sebastian Riveros Perez">
+  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/parinaz-ajalli.jpg" alt="Parinaz Ajalli">
   <div>
-    <div class="team-name"><strong>Juan Sebastian Riveros Perez</strong></div>
-    <div class="team-meta"><strong>VP of Communications</strong> • HEC Montréal</div>
-    <div class="team-email"><a href="mailto:juan-sebastian.riveros-perez@hec.ca">[juan-sebastian.riveros-perez<wbr>@hec.ca]</a></div>
-  </div>
-</div>
-
-<div class="team-card">
-  <img class="team-photo" src="{{ site.baseurl }}/assets/img/team/flore-caye.jpg" alt="Flore Caye">
-  <div>
-    <div class="team-name"><strong>Flore Caye</strong></div>
-    <div class="team-meta"><strong>VP of Events</strong> • Polytechnique Montréal</div>
-    <div class="team-email"><a href="mailto:flore.caye@polymtl.ca">[flore.caye<wbr>@polymtl.ca]</a></div>
+    <div class="team-name"><strong>Parinaz Ajalli</strong></div>
+    <div class="team-meta"><strong>VP of Events</strong> • ÉTS</div>
+    <div class="team-email"><a href="mailto:parinaz.ajalli.1@ens.etsmtl.ca">[parinaz.ajalli.1<wbr>@ens.etsmtl.ca]</a></div>
   </div>
 </div>
 
